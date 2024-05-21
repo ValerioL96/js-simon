@@ -33,3 +33,28 @@ const timerSeconds = setInterval(function(){
 
 //Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
 
+//4) passati i 30 secondi con l'ausilio di una classe faccio scomparire i numeri 
+//5) chiedo all'utente quali fossero i numeri appena scomparsi:
+
+     //-creo un ciclo for che si ripeta;
+
+     for(let i= 0; i<=5; i++){
+
+        //-creo un prompt che chieda all'utente quali siano i numeri;
+        const usernumbers = Number.parseInt(prompt('scrivi i numeri appena visti'),10);
+
+        //Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+
+         //6) creo una condizione:
+              //- se i numeri usciti sono uguali a quelli scelti dall'utente allora uscira stampato (Hai Vinto!);
+              if(usernumbers == numbersRandomIA){
+                console.log('Hai vinto!');
+              } //- altrimenti (Riprova sarai più fortunato).
+              else{
+                console.log('Riprova sarai più fortunato');
+              }
+             
+
+     }
+
+     
